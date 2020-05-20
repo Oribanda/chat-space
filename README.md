@@ -1,12 +1,12 @@
 # Chat-spaceDB設計
 
 
-## groups_usersテーブル
+## usersテーブル
 
-|Column|Type|Options|
-|------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|Column||Column|Type|Options|
+|------||------|----|-------|
+|user_id||user_id|integer|null: false, foreign_key: true|
+|group_id||group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
