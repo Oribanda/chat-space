@@ -3,10 +3,10 @@
 
 ## usersテーブル
 
-|Column||Column|Type|Options|
+|id||Column|Type|Options|
 |------||------|----|-------|
-|user_id||user_id|integer|null: false, foreign_key: true|
-|group_id||group_id|integer|null: false, foreign_key: true|
+|1||user_id|integer|null: false, foreign_key: true|
+|2||group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
