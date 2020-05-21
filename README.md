@@ -2,7 +2,7 @@
 
 
 ## messagesテーブル
-|Column|Type|Options
+|Column|Type|Options|
 |------|----|-------|
 body text
 image string
@@ -14,7 +14,7 @@ image string
 - belongs_to :user
 
 ## usersテーブル
-|Column|Type|Options
+|Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, add_index: true|
 |email|string|null: false, unique: true|
@@ -25,9 +25,9 @@ image string
 - has_many :messages
 
 ## groupsテーブル
-|Column|Type|Options
+|Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false, unique: true|
+|name|string|null: false, unique: true|
 
 ## Association
 - has_many :groups_users
@@ -35,7 +35,7 @@ image string
 - has_many :messages
 
 ## groups_usersテーブル
-|Column|Type|Options
+|Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
