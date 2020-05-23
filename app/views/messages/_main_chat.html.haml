@@ -1,0 +1,22 @@
+.main
+  .main__header
+    .main__header__box
+      .main__header__box__group
+        Hello
+      .main__header__box__member
+        Memder :
+    .main__header__edit
+      = link_to "#", class: "edit" do
+        Edit
+  .main__messages
+  .form
+    .form__input
+      = form_for "#" do |f|
+        .form__input__message-box  
+          = f.text_field :text, class: "form-input-text"
+          = f.label :image, class: "form-image" do
+            = f.file_field :image, class: 'hidden'
+            = icon('fa', 'image')
+          = f.submit 'send', class: 'send'
+    
+      
