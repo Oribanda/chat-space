@@ -4,15 +4,16 @@
       .side__header__box__user
         masa
       .side__header__box__icon
-        = link_to "#" do
+        = link_to new_group_path do
           = icon('far', 'edit', class: "edit")
         = link_to "#" do
           = icon('fa', 'cog', class: "cog")
   .side__group
-    .side__group__name
-      test
-    .side__group__message
-      まだメッセージがありません
-
-
-    
+    - current_user.groups.each do |group|
+      .side__group__team
+        = link_to "#" do
+          .side__group__name
+            = group.name
+          .side__group__message
+            まだメッセージがありません
+      
