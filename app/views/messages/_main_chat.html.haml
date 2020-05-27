@@ -7,7 +7,8 @@
             .main__header__box__group__name
               = @group.name
       .main__header__box__member
-        = current_user.name
+        Memder :
+        = current_user.name 
     .main__header__edit
       = link_to edit_group_path(@group), class: "edit" do
         Edit
