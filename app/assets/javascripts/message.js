@@ -60,7 +60,7 @@ $(function(){
       $.each(messages, function(i, message) {
         insertHTML += buildHTML(message)
       });
-      //メッセージが入ったHTMLに、入れ物ごと追加
+      
       $('.main__messages').append(insertHTML);
       $('.main__messages').animate({ scrollTop: $('.main__messages')[0].scrollHeight});
     }
