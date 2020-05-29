@@ -90,6 +90,7 @@
 .side {
   width:300px;
   height:100vh;
+  text-decoration: none;
   &__header {
     height: 100px;
     background-color: #253141;
@@ -124,6 +125,7 @@
     height: calc(100vh - 100px);
     padding: 20px 20px 0;
     color: #ffffff;
+    
     &__team {
       margin-bottom: 40px;
       &__name {
