@@ -86,8 +86,8 @@ $(function(){
         var html = buildHTML(data);
         $('.main__messages').append(html);
         $('form')[0].reset();
+        $('input').prop('disabled', false);
         $('.main__messages').animate({ scrollTop: $('.main__messages')[0].scrollHeight});
-        $(".send").prop("disabled", false);
       })
       .fail(function() {
         alert("メッセージ送信に失敗しました");
