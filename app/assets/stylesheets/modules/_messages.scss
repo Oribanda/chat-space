@@ -43,51 +43,72 @@
         }
     }
   }
-  &__messages {
+
+
+  .main__messages {
     background-color: #fafafa;
     height: calc(100vh - 190px);
-    line-height: 100px;
     padding: 46px 40px;
     overflow: scroll;
-    display: flex;
-  }
-  &__form {
-    background-color: #d2d2d2;
-    height: 90px;
-    padding: 20px 40px;
-    form {
+    .upper-message { 
       display: flex;
-      .form__input {
-        width: 100%;
-        position: relative;
-        &-text {
-          width: 100%;
-          height: 50px;
-          border-style: none;
-          padding: 0px 40px 0px 10px;
-        }
-        &-image {
-          font-size: 1.3rem;
-          position: absolute;
-          right: 10px;
-          top: 10px;
-          &-hidden{
-            display: none;
+      margin-bottom: 10px;
+    }
+    .upper-message__user-name {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .upper-message__date {
+      margin-left: 10px;
+      font-size: 12px;
+      color: #999999;
+    }
+    .lower-message__content {
+      color: #434a54;
+      font-size: 14px;
+      padding-bottom: 40px;
+    }  
+  }
+
+
+
+      &__form {
+        background-color: #d2d2d2;
+        height: 90px;
+        padding: 20px 40px;
+        form {
+          display: flex;
+          .form__input {
+            width: 100%;
+            position: relative;
+            &-text {
+              width: 100%;
+              height: 50px;
+              border-style: none;
+              padding: 0px 40px 0px 10px;
+            }
+            &-image {
+              font-size: 1.3rem;
+              position: absolute;
+              right: 10px;
+              top: 10px;
+              &-hidden{
+                display: none;
+              }
+            }
+          }
+          .send {
+            background-color: #38aef0;
+            border: 1px solid #38aef0;
+            width: 100px;
+            height: 50px;
+            margin-left: 15px;
+            color: white;
+            cursor: pointer;
+            padding: 0 30px;
           }
         }
       }
-      .send {
-        background-color: #38aef0;
-        border: 1px solid #38aef0;
-        width: 100px;
-        height: 50px;
-        margin-left: 15px;
-        color: white;
-        cursor: pointer;
-        padding: 0 30px;
-      }
-    }
-  }
 }
 
 .side {
