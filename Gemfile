@@ -61,6 +61,7 @@ gem 'devise'
 gem 'pry-rails'
 gem 'mini_magick'
 gem 'carrierwave'
+gem 'fog-aws'
 group :test, :development do 
   gem 'capybara'
 end
