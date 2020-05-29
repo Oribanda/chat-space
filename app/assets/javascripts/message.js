@@ -92,6 +92,7 @@ $(function(){
       .fail(function() {
         alert("メッセージ送信に失敗しました");
      });
+     return false;
    })
    if (document.location.href.match(/\/groups\/\d+\/messages/)) {
     setInterval(reloadMessages, 7000);
